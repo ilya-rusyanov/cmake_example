@@ -13,3 +13,4 @@ target_link_libraries(example mylib)
 
 target_include_directories(client src)
 target_include_directories(server src)
+set_target_properties(client server mylib CXX_STANDARD 17)
