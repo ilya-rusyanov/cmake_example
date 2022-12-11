@@ -5,8 +5,11 @@ add_library(mylib
     src/mylibfile.hpp
     src/mylibfile.cpp)
 
-add_executable(example src/main.cpp)
+add_executable(server src/server.cpp)
+
+add_executable(client src/client.cpp)
 
 target_link_libraries(example mylib)
 
-target_include_directories(example src)
+target_include_directories(client src)
+target_include_directories(server src)
